@@ -69,7 +69,7 @@
       "required": false,
       "env_variable": "CACHE_MAX_AGE"
     }
-  ]
+  ],
   "created_at": 1737791012000,
   "updated_at": 1737791012000
 }
