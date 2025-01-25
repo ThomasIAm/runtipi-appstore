@@ -20,7 +20,6 @@
       "label": "IP",
       "hint": "IP address that lancache is reachable on.",
       "placeholder": "192.168.2.100",
-      "default": "0.0.0.0",
       "required": true,
       "env_variable": "LANCACHE_IP"
     },
