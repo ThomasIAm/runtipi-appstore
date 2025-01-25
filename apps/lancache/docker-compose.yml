@@ -31,20 +31,20 @@ services:
       ## If you have more storage, you'll likely want to increase this.
       ## The cache server will prune content on a least-recently-used basis if it
       ## starts approaching this limit.
-      CACHE_DISK_SIZE=${CACHE_DISK_SIZE}
+      CACHE_DISK_SIZE=${CACHE_DISK_SIZE}g
 
       ## Sets the minimum free disk space that must be kept at all times.
       ## When the available free space drops below the set amount for any reason,
       ## the cache server will begin pruning content to free up space.
       ## Prevents accidentally running out of disk space if CACHE_DISK_SIZE is set too high.
-      MIN_FREE_DISK=${MIN_FREE_DISK}
+      MIN_FREE_DISK=${MIN_FREE_DISK}g
 
       ## Change this to allow sufficient index memory for the nginx cache manager (default 500m)
       ## We recommend 250m of index memory per 1TB of CACHE_DISK_SIZE
-      CACHE_INDEX_SIZE=${CACHE_INDEX_SIZE}
+      CACHE_INDEX_SIZE=${CACHE_INDEX_SIZE}m
 
       ## Change this to limit the maximum age of cached content (default 3650d)
-      CACHE_MAX_AGE=${CACHE_MAX_AGE}
+      CACHE_MAX_AGE=${CACHE_MAX_AGE}d
     volumes:
       - ${CACHE_ROOT}/cache:/data/cache
       - ${CACHE_ROOT}/logs:/data/logs
