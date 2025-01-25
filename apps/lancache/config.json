@@ -12,7 +12,7 @@
   "source": "https://github.com/lancachenet",
   "website": "https://lancache.net/",
   "exposable": true,
-  "no_gui": true
+  "no_gui": true,
   "supported_architectures": ["arm64", "amd64"],
   "form_fiels": [
     {
