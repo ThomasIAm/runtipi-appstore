@@ -1,0 +1,74 @@
+{
+  "name": "LanCache",
+  "id": "lancache",
+  "available": true,
+  "short_desc": "LAN Party game caching made easy",
+  "author": "LanCache.NET",
+  "port": 6483,
+  "categories": ["utilities", "network", "media", "automation"],
+  "description": "Make the most of your network. Get more play for your gamers. Download your games once and serve them out to many people at your LAN.",
+  "tipi_version": 1,
+  "version": "v1.0.0",
+  "source": "https://github.com/lancachenet",
+  "website": "https://lancache.net/",
+  "exposable": true,
+  "supported_architectures": ["arm64", "amd64"],
+  "form_fiels": [
+    {
+      "type": "ip",
+      "label": "IP",
+      "hint": "IP address that lancache is reachable on.",
+      "placeholder": "192.168.2.100",
+      "default": "0.0.0.0",
+      "required": true,
+      "env_variable": "LANCACHE_IP"
+    },
+    {
+      "type": "ip",
+      "label": "DNS",
+      "hint": "DNS Resolution for forwarded DNS lookups.",
+      "placeholder": "192.168.2.100",
+      "default": "1.1.1.1",
+      "required": true,
+      "env_variable": "UPSTREAM_DNS"
+    },
+    {
+      "type": "number",
+      "label": "Cache disk size (GB)",
+      "hint": "The maximum size of the disk cache in GB.",
+      "placeholder": "2000",
+      "default": "2000",
+      "required": false,
+      "env_variable": "CACHE_DISK_SIZE"
+    },
+    {
+      "type": "number",
+      "label": "Minimum free disk space (GB)",
+      "hint": "The minimum free disk space that must be kept at all times in GB.",
+      "placeholder": "10",
+      "default": "10",
+      "required": false,
+      "env_variable": "MIN_FREE_DISK"
+    },
+    {
+      "type": "number",
+      "label": "Cache index size (MB)",
+      "hint": "We recommend 250m of index memory per 1TB of cache.",
+      "placeholder": "500",
+      "default": "500",
+      "required": false,
+      "env_variable": "CACHE_INDEX_SIZE"
+    },
+    {
+      "type": "number",
+      "label": "Cache max age (days)",
+      "hint": "The maximum age of cached content in days.",
+      "placeholder": "3650",
+      "default": "3650",
+      "required": false,
+      "env_variable": "CACHE_MAX_AGE"
+    }
+  ]
+  "created_at": 1737791012000,
+  "updated_at": 1737791012000
+}
