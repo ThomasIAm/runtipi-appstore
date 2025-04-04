@@ -14,7 +14,7 @@
   "exposable": true,
   "no_gui": true,
   "supported_architectures": ["arm64", "amd64"],
-  "form_fiels": [
+  "form_fields": [
     {
       "type": "ip",
       "label": "IP",
