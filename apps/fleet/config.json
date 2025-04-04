@@ -1,5 +1,5 @@
 {
-  "name": "Fleet ",
+  "name": "Fleet",
   "id": "fleet",
   "available": true,
   "short_desc": "One agent for every OS, script, config, etc.",
@@ -14,13 +14,14 @@
   "exposable": true,
   "no_gui": false,
   "supported_architectures": ["amd64"],
+  "created_at": 1743775149000,
+  "updated_at": 1743775149000,
   "form_fiels": [
     {
       "type": "ip",
       "label": "IP",
       "hint": "IP address that services are reachable on.",
       "placeholder": "192.168.2.100",
-      "default": "",
       "required": true,
       "env_variable": "IP"
     },
@@ -55,8 +56,6 @@
       "type": "password",
       "label": "MySQL password",
       "hint": "The password for MySQL.",
-      "placeholder": "",
-      "default": "",
       "required": true,
       "env_variable": "MYSQL_PASSWORD"
     },
@@ -69,7 +68,5 @@
       "required": true,
       "env_variable": "MYSQL_DATABASE"
     }
-  ],
-  "created_at": 1743775149000,
-  "updated_at": 1743775149000
+  ]
 }
