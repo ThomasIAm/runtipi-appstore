@@ -22,7 +22,7 @@
       "label": "IP",
       "hint": "IP address that services are reachable on.",
       "placeholder": "192.168.2.100",
-      "required": true,
+      "required": false,
       "env_variable": "IP"
     },
     {
@@ -31,7 +31,7 @@
       "hint": "Port that Redis is reachable on.",
       "placeholder": "61120",
       "default": "61120",
-      "required": true,
+      "required": false,
       "env_variable": "REDIS_PORT"
     },
     {
@@ -40,7 +40,7 @@
       "hint": "Port that MySQL is reachable on.",
       "placeholder": "44235",
       "default": "44235",
-      "required": true,
+      "required": false,
       "env_variable": "MYSQL_PORT"
     },
     {
@@ -49,7 +49,7 @@
       "hint": "The username for MySQL.",
       "placeholder": "fleet",
       "default": "fleet",
-      "required": true,
+      "required": false,
       "env_variable": "MYSQL_USERNAME"
     },
     {
@@ -65,7 +65,7 @@
       "hint": "The database name for MySQL.",
       "placeholder": "fleet",
       "default": "fleet",
-      "required": true,
+      "required": false,
       "env_variable": "MYSQL_DATABASE"
     }
   ]
