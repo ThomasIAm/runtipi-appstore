@@ -55,9 +55,16 @@
     {
       "type": "password",
       "label": "MySQL password",
-      "hint": "The password for MySQL.",
+      "hint": "The password for MySQL user.",
       "required": true,
       "env_variable": "MYSQL_PASSWORD"
+    },
+    {
+      "type": "password",
+      "label": "MySQL root password",
+      "hint": "The password for MySQL root user.",
+      "required": true,
+      "env_variable": "MYSQL_ROOT_PASSWORD"
     },
     {
       "type": "text",
