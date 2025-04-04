@@ -16,7 +16,7 @@
   "supported_architectures": ["amd64"],
   "created_at": 1743775149000,
   "updated_at": 1743775149000,
-  "form_fiels": [
+  "form_fields": [
     {
       "type": "ip",
       "label": "IP",
