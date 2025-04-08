@@ -4,7 +4,7 @@
   "available": true,
   "short_desc": "One agent for every OS, script, config, etc.",
   "author": "Fleet Device Management Inc.",
-  "port": 7693,
+  "port": 32780,
   "categories": ["utilities", "automation", "security"],
   "description": "Replace the sprawl with lightning fast device management that lets employees see what's going on.",
   "tipi_version": 1,
