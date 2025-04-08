@@ -11,7 +11,7 @@ services:
       - FLEET_MYSQL_USERNAME=${MYSQL_USERNAME}
       - FLEET_MYSQL_PASSWORD=${MYSQL_PASSWORD}
       - FLEET_MYSQL_DATABASE=${MYSQL_DATABASE}
-      - FLEET_SERVER_ADDRESS=${IP}:${APP_PORT}
+      - FLEET_SERVER_ADDRESS=0.0.0.0:8080
       - FLEET_MYSQL_ADDRESS=${IP}:${MYSQL_PORT}
       - FLEET_REDIS_ADDRESS=${IP}:${REDIS_PORT}
       - FLEET_SERVER_TLS=false
@@ -51,7 +51,7 @@ services:
   fleet-prepare-db:
     container_name: fleet-prepare-db # Should be exact same name as "id" field
     image: fleetdm/fleet:main # Try to avoid "latest" tag. As it may break configs in the future.
-    restart: no # Do not change this (should be unless-stopped)
+    restart: unless-stopped # Do not change this
     environment:
       - TZ=${TZ} # Can use any env variable. See "environment variables" section in the docs
       ## See the "Settings" section in README.md for more details
@@ -59,7 +59,7 @@ services:
       - FLEET_MYSQL_USERNAME=${MYSQL_USERNAME}
       - FLEET_MYSQL_PASSWORD=${MYSQL_PASSWORD}
       - FLEET_MYSQL_DATABASE=${MYSQL_DATABASE}
-      - FLEET_SERVER_ADDRESS=${IP}:${FLEET_PORT}
+      - FLEET_SERVER_ADDRESS=0.0.0.0:8080
       - FLEET_MYSQL_ADDRESS=${IP}:${MYSQL_PORT}
       - FLEET_REDIS_ADDRESS=${IP}:${REDIS_PORT}
       - FLEET_SERVER_TLS=false
